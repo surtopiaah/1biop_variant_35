@@ -32,3 +32,7 @@ run_test() {
 
 #        no  input                                        count sum min max
 run_test 1  '10 10 10 10 15 10'                            5   55  10 15   # earliest termination
+
+
+echo "$passed of $total tests passed"
+[ "$passed" -eq "$total" ] || { echo "SOME TESTS FAILED"; exit 1; }
