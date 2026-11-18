@@ -29,8 +29,8 @@ int main(void){
         if (!stop) {
             count++;
             sum += x;
-            if (min < x) min = x;
-            if (max > x) max = x;
+            if (x < min) min = x;
+            if (x > max) max = x;
         }
     } while (!stop);
     
