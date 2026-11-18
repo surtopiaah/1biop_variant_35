@@ -7,7 +7,7 @@ print the count, sum, min, max
 #include <stdio.h>
 
 int main(void){
-    int x, count, sum, min, max;
+    int x, count, sum, min, max, stop;
 
     scanf("%d", &x);
     count = 1;
@@ -23,15 +23,16 @@ int main(void){
         if (x > max) max = x;
     }
 
-    scanf("%d", &x);
-    // repeat the body until it's false
-    while(!(x == 2 * count && sum > 50)){
-        count++;
-        sum += x;
-        if (x < min) min = x;
-        if (x > max) max = x;
+    do {
         scanf("%d", &x);
-    }
+        stop = (x == 2 * count && sum > 50);
+        if (!stop) {
+            count++;
+            sum += x;
+            if (min < x) min = x;
+            if (max > x) max = x;
+        }
+    } while (!stop);
     
     printf("count = %d\n", count);
     printf("sum = %d\n", sum);
