@@ -1,4 +1,8 @@
 #!/usr/bin/bash
+flags="-std=c11 -Wall -Wextra -Wpedantic"
+
+gcc $flags variant_35_while.c -o variant_35_while || exit 1
+gcc $flags variant_35_do_while.c -o variant_35_do_while || exit 1
 
 passed=0
 total=0
@@ -25,3 +29,6 @@ run_test() {
     fi
     echo
 }
+
+#        no  input                                        count sum min max
+run_test 1  '10 10 10 10 15 10'                            5   55  10 15   # earliest termination
