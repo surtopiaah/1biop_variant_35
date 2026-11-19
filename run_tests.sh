@@ -1,8 +1,17 @@
 #!/usr/bin/bash
+
+#compile & run all ten tests
+set -eu 
+#-e: Exit immediately if any command exits with a non-zero status (i.e., on error). 
+# This ensures scripts fail fast when something goes wrong.
+
+#-u: Treat unset variables as an error and exit immediately.
+# This prevents unintended behavior from uninitialized variables.
+
 flags="-std=c11 -Wall -Wextra -Wpedantic"
 
-gcc $flags variant_35_while.c -o variant_35_while || exit 1
-gcc $flags variant_35_do_while.c -o variant_35_do_while || exit 1
+gcc $flags variant_35_while.c -o variant_35_while 
+gcc $flags variant_35_do_while.c -o variant_35_do_while 
 
 passed=0
 total=0
@@ -30,6 +39,8 @@ run_test() {
     echo
 }
 
+
+####### will have to make a separate file and extra .csv file
 #        no  input                                        count sum min max
 run_test 1  '10 10 10 10 15 10'                            5   55  10 15   # earliest termination
 
