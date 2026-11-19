@@ -8,6 +8,10 @@ set -eu
 #-u: Treat unset variables as an error and exit immediately.
 # This prevents unintended behavior from uninitialized variables.
 
+
+# Work in the folder containing this script.
+cd "$(dirname "$0")"
+
 flags="-std=c11 -Wall -Wextra -Wpedantic"
 
 gcc $flags variant_35_while.c -o variant_35_while 
@@ -15,6 +19,8 @@ gcc $flags variant_35_do_while.c -o variant_35_do_while
 
 passed=0
 total=0
+
+ 
 
 run_test() {
     local no="$1" input="$2"
