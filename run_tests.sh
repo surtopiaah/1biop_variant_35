@@ -40,9 +40,17 @@ run_test() {
 }
 
 
-####### will have to make a separate file and extra .csv file
 #        no  input                                        count sum min max
-run_test 1  '10 10 10 10 15 10'                            5   55  10 15   # earliest termination
+run_test  1 '10 10 10 10 15 10'                            5   55  10   15   
+run_test  2 '20 20 20 20 8 10'                             5   88   8   20
+run_test  3 '20 20 20 20 20 11 12'                         6  111  11   20
+run_test  4 '1 1 1 1 1 10 12 14 16 18'                     9   57   1   16
+run_test  5 '10 10 10 10 10 10 12'                         6   60  10   10
+run_test  6 '11 10 10 10 10 10'                            5   51  10   11
+run_test  7 '30 5 40 8 7 9 6 14'                           7  105   5   40
+run_test  8 '6 6 6 6 6 6 6 6 6 18'                         9   54   6    6
+run_test  9 '0 0 0 0 0 100 12'                             6  100   0  100
+run_test 10 '3 9 4 8 5 7 6 7 6 5 20'                       10  60   3    9
 
 
 echo "$passed of $total tests passed"
