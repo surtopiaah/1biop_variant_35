@@ -22,10 +22,14 @@ total=0
 
  
 
+
+# run_test: number, input (including the stopping number), expected count sum min max
 run_test() {
     local no="$1" input="$2"
     local expected actual_w actual_d
     expected=$(printf 'count = %s\nsum = %s\nmin = %s\nmax = %s' "$3" "$4" "$5" "$6")
+ 
+    # The same input is piped into both programs, nothing is typed manually.
     actual_w=$(printf '%s\n' "$input" | ./variant_35_while)
     actual_d=$(printf '%s\n' "$input" | ./variant_35_do_while)
     total=$((total + 1))
