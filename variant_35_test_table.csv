@@ -1,0 +1,11 @@
+No.,Input sequence,Expected output,while output,do ... while output,OK?
+1,10 10 10 10 15 10,count = 5; sum = 55; min = 10; max = 15,count = 5; sum = 55; min = 10; max = 15,count = 5; sum = 55; min = 10; max = 15,YES
+2,20 20 20 20 8 10,count = 5; sum = 88; min = 8; max = 20,count = 5; sum = 88; min = 8; max = 20,count = 5; sum = 88; min = 8; max = 20,YES
+3,20 20 20 20 20 11 12,	count = 6; sum = 111; min = 11; max = 20,count = 6; sum = 111; min = 11; max = 20,count = 6; sum = 111; min = 11; max = 20,YES
+4,1 1 1 1 1 10 12 14 16 18,	count = 9; sum = 57; min = 1; max = 16,count = 9; sum = 57; min = 1; max = 16,count = 9; sum = 57; min = 1; max = 16,YES
+5,10 10 10 10 10 10 12,	count = 6; sum = 60; min = 10; max = 10,count = 6; sum = 60; min = 10; max = 10,count = 6; sum = 60; min = 10; max = 10,YES
+6,11 10 10 10 10 10,	count = 5; sum = 51; min = 10; max = 11,count = 5; sum = 51; min = 10; max = 11,count = 5; sum = 51; min = 10; max = 11,YES
+7,30 5 40 8 7 9 6 14,	count = 7; sum = 105; min = 5; max = 40,count = 7; sum = 105; min = 5; max = 40,count = 7; sum = 105; min = 5; max = 40,YES
+8,6 6 6 6 6 6 6 6 6 18,	count = 9; sum = 54; min = 6; max = 6, count = 9; sum = 54; min = 6; max = 6,count = 9; sum = 54; min = 6; max = 6,YES
+9,0 0 0 0 0 100 12,	count = 6; sum = 100; min = 0; max = 100, count = 6; sum = 100; min = 0; max = 100,count = 6; sum = 100; min = 0; max = 100,YES
+10,3 9 4 8 5 7 6 7 6 5 20,	count = 10; sum = 60; min = 3; max = 9,count = 10; sum = 60; min = 3; max = 9,count = 10; sum = 60; min = 3; max = 9,YES

@@ -34,7 +34,7 @@ run_test() {
     actual_d=$(printf '%s\n' "$input" | ./variant_35_do_while)
     total=$((total + 1))
 
-    echo "=== Test $no ==="
+    echo "run_test $no:"
     echo "Input:    $input"
     echo "Expected: $(echo "$expected" | tr '\n' ' ')"
     echo "while:    $(echo "$actual_w" | tr '\n' ' ')"
