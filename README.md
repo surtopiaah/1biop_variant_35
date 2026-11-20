@@ -1,6 +1,8 @@
 # 1BIOBP — Individual Assignment, Variant 35
 
-**Task:** Read a sequence of integers. Stop when all three conditions hold for the current candidate `x`: at least 5 values have been processed, `x == 2 * count`, and `sum > 50`. The terminating `x` must **not** be counted, added to the sum, or used for the minimum and maximum. Print `count`, `sum`, `min` and `max` of the processed values. Both a `while` and a `do ... while` version are required and must print identical results.
+**Task:** Read a sequence of integers. Stop when all three conditions hold for the current candidate `x`: at least 5 values have been processed, `x == 2 * count`, and `sum > 50`.
+The terminating `x` must **not** be counted, added to the sum, or used for the minimum and maximum.
+Print `count`, `sum`, `min` and `max` of the processed values. Both a `while` and a `do ... while` version are required and must print identical results.
 
 ## The state (short explanation)
 
